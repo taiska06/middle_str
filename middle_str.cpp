@@ -49,10 +49,16 @@ bool itc_compare(string s1, string s2) {
 int itc_countWords(string str){
 long long lenght = itc_len(str);
 int amount = 0;
+
         for(int i=0;i<lenght;i++){
-                if(str[i] == ' ' ) {
-                amount++;
-            }
+                if(str[i]==' '){
+                       amount++;
+                       }
+           else if(!(str[i]>='A' && str[i]<='Z'|| str[i]>='a' && str[i]<='z' )){
+                       amount--;
+
+                    }
+
         }
-        return amount;
+        return amount+1;
 }
