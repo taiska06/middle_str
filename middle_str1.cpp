@@ -37,7 +37,7 @@ unsigned char itc_changeCase(unsigned char c){
 bool itc_compare(string s1, string s2) {
     long long lenght1 = itc_len(s1);
     long long lenght2 = itc_len(s2);
-    int a;
+    bool a;
     for (int i = 0; i < lenght2 || i<lenght1; i++){
         if (s1[i] != s2[i])
             a++;
