@@ -36,23 +36,18 @@ string v;
 for(char c:str)
 if (c != ' ')
     v += c;
-str = v;
-
-  for (int i = 0; i < length; i++){
+    str = v;
+   for (int i = 0; i < length; i++){
      for (int j = 0; j < length - 1; j++){
       if (str[j] > str[j+ 1]){
         temp = str[j];
         str[j] = str[j + 1];
         str[j + 1] = temp;
-      }
-    }
-  }
+      }}}
   for(int i=0;i<length;i++){
-    if(str[i]==str[i+1]){
+    if(str[i]==str[i+1] && str[i]!= ' '){
         return str[i];
-    }
-  }
-}
+    }}}
 
 bool itc_isFirstInSecond(string s1, string s2){
     int length2=itc_len(s2);
