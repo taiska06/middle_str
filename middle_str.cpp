@@ -2,16 +2,6 @@
 #include <string>
 #include "middle_str.h"
 using namespace std;
-long long itc_len(string str){
-     int kol,i;
-     kol=0;
-     i=0;
-     while(str [i]!= '\0'){
-      kol++;
-      i++;
- }
- return kol;
- }
 string itc_Cezar(string str, int k){
 long long length = itc_len(str);
 string str1;
