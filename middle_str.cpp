@@ -69,6 +69,20 @@ bool itc_isFirstInSecond(string s1, string s2){
         }}
     return a;
     }}
+string itc_rmFreeSpace(string str){
+long long length = itc_len(str);
+string S2;
+for(int i=0;i<length;i++){
+    if(str[i]!=' '){
+        S2+=str[i];
+    }
+     if(str[i]==' ' && str[i+1]==' ')
+            i++;
+    if(str[i]==' ' && str[i+1]!=' '){
+        S2+=' ';
+}}
+return S2;
+}
 
 
 
