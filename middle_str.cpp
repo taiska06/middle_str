@@ -28,8 +28,7 @@ int rp = 0,sp = 0,count_of_symbols = 0,max = 0,word_num = 0,word_m = 0;
         return "error";
     }else{
     return str1;
-    }
-}
+    }}
 char itc_sameChar(string str){
 char temp;
 long long length = itc_len(str);
