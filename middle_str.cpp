@@ -60,3 +60,53 @@ if(n==3){
     return 1;
 }
 }
+
+string perezapis(string str){
+    long long length=itc_len(str);
+    string rez="";
+  //  cout<<rez << endl;
+    for(int i=0;i<length;i++){
+        rez+=str[i];
+    }
+    rez+="\0";
+return rez;
+}
+
+
+string itc_maxCharWord(string str){
+long long length = itc_len(str);
+string new_str="";
+int i,maxi=0;
+string rez="";
+for(i=0; i<length;i++){
+    if(str[i]!=' '){
+        new_str+=str[i];
+    }else{
+        new_str+='\0';
+        long long length1 = itc_len(new_str);
+        if(length1>maxi && st_number(new_str)){
+                rez = "";
+                rez = perezapis(new_str);
+                maxi=length1;
+        }
+        new_str="";
+    }}
+        new_str+='\0';
+        long long length1 = itc_len(new_str);
+        if(length1>maxi && st_number(new_str)){
+                rez = "";
+                rez = perezapis(new_str);}
+    return rez;
+}
+
+
+bool st_number(string str){
+int i;
+long long length=itc_len(str);
+for(i=0;i<length;i++){
+    if (!(str[i]>='A' && str[i]<='Z' || str[i]>='a' && str[i]>='z')){
+        return false;
+    }}
+return true;
+}
+
