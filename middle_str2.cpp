@@ -2,33 +2,6 @@
 #include <string>
 #include "middle_str.h"
 using namespace std;
-string itc_maxCharWord(string str){
-long long length = itc_len(str);
-int rp = 0,sp = 0,count_of_symbols = 0,max = 0,word_num = 0,word_m = 0;
-    string str1;
-    for (int i = 0; i < length; i++) {
-        if ((((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) ))
-            count_of_symbols++;
-                else if (!(str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))  {
-                     count_of_symbols=0;
-                     while(str[i]!=' '){
-                        i++;}}
-        if (count_of_symbols > max) {
-            max = count_of_symbols;
-            sp = i;
-            rp = sp - count_of_symbols+1;
-            word_m = word_num + 1;}
-        if ((i + 1 == length) || (str[i + 1] == ' ' || str[i + 1] == '.' || str[i + 1] == '!' || str[i + 1] == '?')) {
-            count_of_symbols = 0;
-             word_num++;}}
-    for (int i = rp; i <= sp; i++) {
-        str1+=str[i];}
-    long long length1 = itc_len(str1);
-    if(length1==length){
-        return "error";
-    }else{
-    return str1;
-    }}
 char itc_sameChar(string str){
 char temp;
 long long length = itc_len(str);
