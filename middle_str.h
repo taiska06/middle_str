@@ -16,4 +16,6 @@ bool itc_isFirstInSecond(string s1, string s2);
 bool itc_isIp(string str);
 string itc_rmFreeSpace(string str);
 string itc_Cezar(string str, int k);
+bool st_number(string str);
+void perezapis(string str,string &rez);
 #endif // MIDDLE_STR_H_INCLUDED
