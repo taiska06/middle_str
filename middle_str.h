@@ -14,4 +14,5 @@ string itc_maxCharWord(string str);
 char itc_sameChar(string str);
 bool itc_isFirstInSecond(string s1, string s2);
 bool itc_isIp(string str);
+string itc_rmFreeSpace(string str);
 #endif // MIDDLE_STR_H_INCLUDED
